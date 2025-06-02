@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background-color: #F8F6F0;
-  --header-button-color: #FDCB58;
-  --text-color: #1F3A5F;
-  --link-highlight-color: #7AC7F2;
-  --card-footer-color: #8C6849;
+  --primary-color: #2D5DA1;       /* Primary buttons, headings, CTAs */
+  --background-color: #FFFFFF;    /* Main background */
+  --card-background-color: #F5F7FA; /* Card backgrounds, soft sections */
+  --text-color: #2B2B2B;          /* Main body text */
+  --link-color: #B3CFF2;          /* Links, hovers, subtle accents */
+  --border-color: #DDE3EC;        /* Dividers, card borders, inputs */
 
   background-color: var(--background-color);
   font-synthesis: none;
