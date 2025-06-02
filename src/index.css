@@ -1,21 +1,15 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --background-color: #F8F6F0;
+  --header-button-color: #FDCB58;
+  --text-color: #1F3A5F;
+  --link-highlight-color: #7AC7F2;
+  --card-footer-color: #8C6849;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: var(--background-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
