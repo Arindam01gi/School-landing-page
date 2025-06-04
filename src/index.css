@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #2D5DA1;       /* Primary buttons, headings, CTAs */
-  --background-color: #FFFFFF;    /* Main background */
+  --primary-color: #470A68;       /* Primary buttons, headings, CTAs */
+  --background-color: #E8E2DD;    /* Main background */
   --card-background-color: #F5F7FA; /* Card backgrounds, soft sections */
   --text-color: #2B2B2B;          /* Main body text */
   --link-color: #B3CFF2;          /* Links, hovers, subtle accents */
@@ -15,4 +15,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply Montserrat font globally */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-primary{
+  background-color: #470A68;
+}
+
+.bg-background{
+  background-color: #E8E2DD;
 }
