@@ -1,22 +1,36 @@
 import React from 'react'
 
-const Navbar = () => {
-   return (
-      <div className='bg-[var(--primary-color)] text-[var(--background-color)]  h-28 w-full flex items-center text-[22px] cursor-pointer'>
-         <div className='flex justify-center items-center  gap-10 w-5/12 cursor-pointer'>
-            <span>Apply</span>
-            <span>Visit</span>
-            <span>Contact</span>
-         </div>
-         <div className='w-1/6 flex justify-center items-center cursor-pointer'>
-            <img src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg" alt="logo" className='w-16 h-16 hover:scale-110 transition-transform duration-300' />
-         </div>
-         <div className='w-1/3 flex justify-end  gap-10 cursor-pointer'>
-            <span>Search</span>
-            <span>Menu</span>
-         </div>
+interface NavbarProps {
+  isTransparent?: boolean
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full h-28 flex items-center text-[22px] cursor-pointer transition-all duration-300 z-50 ${
+        isTransparent
+          ? 'bg-transparent text-white'
+          : 'bg-primary text-white'
+      }`}
+    >
+      <div className='flex justify-center items-center gap-10 w-5/12'>
+        <span>Apply</span>
+        <span>Visit</span>
+        <span>Contact</span>
       </div>
-   )
+      <div className='w-1/6 flex justify-center items-center'>
+        <img
+          src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg"
+          alt="logo"
+          className='w-16 h-16 hover:scale-110 transition-transform duration-300'
+        />
+      </div>
+      <div className='w-1/3 flex justify-end gap-10'>
+        <span>Search</span>
+        <span>Menu</span>
+      </div>
+    </div>
+  )
 }
 
 export default Navbar
