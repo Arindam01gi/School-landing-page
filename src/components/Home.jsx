@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
-import NextSection from './NextSection'
+import NextSection from './DataHero'
 
 const Home = () => {
   const [isTransparent, setIsTransparent] = useState(true)
