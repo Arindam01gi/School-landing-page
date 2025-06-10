@@ -72,20 +72,20 @@ const DataHero = () => {
         - Tatler Schools Guide
       </p>
 
-      <div className=' w-full h-[44.69rem] my-48 xl:my-64 flex xl:justify-center justify-end px-10 xl:px-0 items-center '>
-        <div className='bg-white xl:w-3/5 w-11/12 h-full flex'>
+      <div className=' w-full h-[44.75rem] mt-48 xl:mt-64  mb-28 flex xl:justify-center justify-end px-10 xl:px-0 items-center  '>
+        <div className='bg-white xl:w-[65%] w-11/12 h-full flex '>
 
-          <div className='w-3/5 h-full relative '>
+          <div className='w-[75%] h-full relative '>
             <img
               src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/08/WEB-Version_PHS_Jo-Sharrock_SW-1-e1722848356843-2048x1536-c-center.webp"
               alt="Putney High School"
-              className="absolute left-[-10%] top-1/2 transform -translate-y-1/2 min-w-[110%] max-w-[110%] h-[85%] object-cover"
+              className="absolute left-[-10%] top-1/2 transform -translate-y-1/2 min-w-[100%] max-w-[100%] h-[85%] object-cover"
             />
           </div>
-          <div className='w-2/5  h-full flex flex-col justify-center items-center'>
-            <div className='  flex flex-col'>
+          <div className='w-[25%]  h-full flex flex-col justify-center items-center '>
+            <div className='  flex flex-col '>
 
-              <div className='w-full text-4xl text-black  flex justify-center text-wrap text-center items-left '>
+              <div className='w-full text-4xl text-black  flex justify-center text-wrap text-left items-left '>
                 Welcome to Putney
               </div>
 

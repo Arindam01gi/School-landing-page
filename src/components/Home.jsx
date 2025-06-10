@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
-import NextSection from './DataHero'
+import DataHero from './DataHero'
+import Quote from './Quote'
+import Gallery from './Gallery'
+import News from './News'
 
 const Home = () => {
   const [isTransparent, setIsTransparent] = useState(true)
@@ -27,7 +30,10 @@ const Home = () => {
     <div>
       <Navbar isTransparent={isTransparent} />
       <HeroSection />
-      <NextSection />
+      <DataHero />
+      <Quote />
+      <Gallery />
+      <News />
     </div>
   )
 }
