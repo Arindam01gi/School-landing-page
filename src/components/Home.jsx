@@ -5,6 +5,7 @@ import DataHero from './DataHero'
 import Quote from './Quote'
 import Gallery from './Gallery'
 import News from './News'
+import Footer from './Footer'
 
 const Home = () => {
   const [isTransparent, setIsTransparent] = useState(true)
@@ -34,6 +35,7 @@ const Home = () => {
       <Quote />
       <Gallery />
       <News />
+      <Footer />
     </div>
   )
 }
