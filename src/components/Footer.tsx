@@ -95,25 +95,25 @@ const Footer = () => {
                     <div className="flex flex-col justify-center gap-8 lg:items-center lg:flex-row-reverse md:gap-16 text-white">
                         <div className="flex flex-row items-end gap-16 justify-center">
                             <div className="flex flex-wrap gap-4 gap-y-8">
-                                <a href="https://www.instagram.com/putneyhighschool" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                <a href="https://www.instagram.com/putneyhighschool" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-[#470A68] aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                     <i className="fa-brands fa-instagram  fa-lg" aria-hidden="true"></i>
                                     <div className="absolute text-xs font-bold lg:opacity-0 -bottom-7 group-hover:!opacity-100 transition-opacity duration-300 ease-in-out        text-white"></div>
                                 </a>
-                                <a href="https://www.facebook.com/putneyhighschoolGDST/" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                <i className="fa-brands fa-instagram" style={{color: "#511f46;"}}></i>
+                                <a href="https://www.facebook.com/putneyhighschoolGDST/" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-[#470A68] aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <i className="fa-brands fa-facebook-f fa-lg"></i>
                                     <div className="absolute text-xs font-bold lg:opacity-0 -bottom-7 group-hover:!opacity-100 transition-opacity duration-300 ease-in-out        text-white"></div>
                                 </a>
-                                <a href="https://www.linkedin.com/school/putney-high-school" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                    <i className="fa-brands fa-linkedin-in " aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/school/putney-high-school" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-[#470A68] aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                    <i className="fa-brands fa-linkedin-in fa-lg " aria-hidden="true"></i>
                                     <div className="absolute text-xs font-bold lg:opacity-0 -bottom-7 group-hover:!opacity-100 transition-opacity duration-300 ease-in-out      "></div>
                                 </a>
-                                <a href="https://www.youtube.com/channel/UCL1HMSQWmj08mnbPs3HRw-w" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <a href="https://www.youtube.com/channel/UCL1HMSQWmj08mnbPs3HRw-w" target="_blank" className="group flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white text-base md:text-lg text-[#470A68] aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                                     <i className="fa-brands fa-youtube fa-lg" aria-hidden="true"></i>
                                     <div className="absolute text-xs font-bold lg:opacity-0 -bottom-7 group-hover:!opacity-100 transition-opacity duration-300 ease-in-out text-white"></div>
                                 </a>
                             </div>
-                            <button className="flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent min-w-12 relative bg-white aos-init aos-animate" data-button-back-to-top="" data-aos="fade-up" data-aos-delay="400">
-                                <i className="fa-light fa-arrow-up text-base md:text-lg text-primary       " aria-hidden="true"></i>
+                            <button className="flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent text-[#470A68] min-w-12 relative bg-white aos-init aos-animate" data-button-back-to-top="" data-aos="fade-up" data-aos-delay="400">
+                            <i className="fa-solid fa-arrow-up fa-lg"></i>
                             </button>
                         </div>
                         <div className="mt-8 md:mt-0 grow text-center lg:text-left prose-copyright aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">

@@ -7,11 +7,10 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-28 flex items-center text-[22px] cursor-pointer transition-all duration-300 z-50 ${
-        isTransparent
+      className={`fixed top-0 left-0 w-full h-28 flex items-center text-[22px] cursor-pointer transition-all duration-300 z-50 ${isTransparent
           ? 'bg-transparent text-white'
           : 'bg-primary text-white'
-      }`}
+        }`}
     >
       <div className='flex justify-center items-center gap-10 w-5/12'>
         <span>Apply</span>
@@ -26,8 +25,13 @@ const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
         />
       </div>
       <div className='w-1/3 flex justify-end gap-10'>
-        <span>Search</span>
-        <span>Menu</span>
+        <span>
+          <i className="fa-solid fa-bars fa-lg"></i>
+        </span>
+        <span className='text-white '>
+          <i className="fa-solid fa-magnifying-glass fa-lg fa-light"></i>
+        </span>
+
       </div>
     </div>
   )
