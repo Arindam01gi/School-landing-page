@@ -112,8 +112,16 @@ const Footer = () => {
                                     <div className="absolute text-xs font-bold lg:opacity-0 -bottom-7 group-hover:!opacity-100 transition-opacity duration-300 ease-in-out text-white"></div>
                                 </a>
                             </div>
-                            <button className="flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent text-[#470A68] min-w-12 relative bg-white aos-init aos-animate" data-button-back-to-top="" data-aos="fade-up" data-aos-delay="400">
-                            <i className="fa-solid fa-arrow-up fa-lg"></i>
+                            <button
+                                className="flex items-center justify-center transition duration-300 ease-in-out hover:bg-opacity-50 border rounded-full size-12 border-transparent text-[#470A68] min-w-12 relative bg-white aos-init aos-animate"
+                                data-button-back-to-top=""
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                                onClick={() => {
+                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                }}
+                            >
+                                <i className="fa-solid fa-arrow-up fa-lg"></i>
                             </button>
                         </div>
                         <div className="mt-8 md:mt-0 grow text-center lg:text-left prose-copyright aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
