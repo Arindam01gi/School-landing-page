@@ -92,12 +92,12 @@ const Quote = () => {
 
   return (
     <div className='bg-white w-full h-96 mb-24 flex flex-col justify-center items-center'>
-      <div ref={quoteTextRef} className="text-5xl text-[#470A68] font-source-serif px-4 text-center leading-[120%] ">
+      <div ref={quoteTextRef} className=" text-4xl md:text-5xl  text-[#470A68] font-source-serif px-10 md:px-4 text-center leading-[120%] ">
         {quoteCharactersLine1}
         <br /> {/* Retain the line break */}
         {quoteCharactersLine2}
       </div>
-      <p ref={attributionTextRef} className='text-2xl text-[#470A68] pt-10'>
+      <p ref={attributionTextRef} className=' text-lg md:text-2xl text-[#470A68] pt-10'>
         {attributionCharacters}
       </p>
     </div>

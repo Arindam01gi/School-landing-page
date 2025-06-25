@@ -4,9 +4,9 @@ const Gallery = () => {
     return (
         <div className='flex justify-center flex-col  items-center  '>
 
-            <div className=' max-w-7xl flex flex-col  md:flex-row justify-between gap-8 md:h-[32.625rem] px-6 md:px-0'>
+            <div className=' max-w-7xl flex flex-col  lg:flex-row justify-between gap-8 md:h-[32.625rem] px-6 md:px-0'>
 
-                <div className=' w-full md:w-1/3  '>
+                <div className=' w-full lg:w-1/3  '>
                     <div className='h-[72%] relative overflow-hidden'>
                         <img src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/09/Junior-School_10-cropflat-1200x675-c-center.webp"
                             srcSet="
@@ -30,7 +30,7 @@ const Gallery = () => {
                     </div>
 
                 </div>
-                <div className=' w-full md:w-1/3  '>
+                <div className=' w-full lg:w-1/3  '>
                     <div className='h-[72%] relative overflow-hidden'>
                         <img src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/09/PHS_Senior_Putney_Bridge_SW-42crop-1200x675-c-center.webp" srcSet="
                         https://www.putneyhigh.gdst.net/wp-content/uploads/2024/09/PHS_Senior_Putney_Bridge_SW-42crop-640x640-c-center.webp 640w,
@@ -54,7 +54,7 @@ const Gallery = () => {
                     </div>
 
                 </div>
-                <div className=' w-full md:w-1/3  '>
+                <div className=' w-full lg:w-1/3  '>
                     <div className='h-[72%] relative overflow-hidden'>
                     <img src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/09/Sixth-Formers-lunchtime-3-crop-1200x675-c-center.webp"
                      srcSet="
@@ -79,24 +79,15 @@ const Gallery = () => {
                     </div>
 
                 </div>
-
-
-
-
-
             </div>
 
             <div className='flex flex-col gap-6 justify-center items-center'>
 
-                <div className='md:mt-48 mt-16 text-xl md:font-normal font-semibold md:text-4xl  w-[78%] text-center leading-[160%] text-[#470A68]'>
+                <div className='md:mt-48 mt-16 text-xl  md:text-4xl  w-[78%] text-center leading-[160%] text-[#470A68]'>
                     Consistently high achieving academically – the school’s goal is to always ‘stretch and engage’ its pupils.
                 </div>
-                <p className=' text-[#470A68] md:text-2xl text-lg md:font-normal font-semibold'> — Tatler Schools Guide </p>
+                <p className=' text-[#470A68] md:text-2xl text-lg '> — Tatler Schools Guide </p>
             </div>
-
-
-
-
         </div>
     )
 }

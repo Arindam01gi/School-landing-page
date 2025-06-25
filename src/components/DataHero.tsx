@@ -72,7 +72,7 @@ const DataHero = () => {
         - Tatler Schools Guide
       </p>
 
-      <div className=' w-full h-[44.75rem] mt-48 xl:mt-64  mb-28 flex xl:justify-center justify-end px-10 xl:px-0 items-center  '>
+      <div className='hidden md:flex w-full h-[44.75rem] mt-48 xl:mt-64  mb-28 flex xl:justify-center justify-end px-10 xl:px-0 items-center  '>
         <div className='bg-white xl:w-[65%] w-11/12 h-full flex '>
 
           <div className='w-[75%] h-full relative '>
@@ -90,6 +90,34 @@ const DataHero = () => {
               </div>
 
               <div className='my-16 flex flex-col gap-8 justify-center items-left w-full '>
+                <Button text={"Find out more"} />
+                <Button text={"Meet the Head"} />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div className='md:hidden block w-full   my-10 '>
+        <div className='bg-white  '>
+
+          <div className=' '>
+            <img
+              src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/08/WEB-Version_PHS_Jo-Sharrock_SW-1-e1722848356843-2048x1536-c-center.webp"
+              alt="Putney High School"
+              className="h-full w-full"
+            />
+          </div>
+          <div className='w-full flex flex-col justify-center items-center '>
+            <div className='  flex flex-col  px-4'>
+
+              <div className='w-full text-5xl text-black  flex justify-center items-center  leading-28  my-6 '>
+                Welcome to Putney
+              </div>
+
+              <div className='my-10 flex flex-col gap-8 justify-center items-left w-full  '>
                 <Button text={"Find out more"} />
                 <Button text={"Meet the Head"} />
               </div>
