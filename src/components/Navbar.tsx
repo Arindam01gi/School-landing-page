@@ -5,6 +5,9 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
+  const transparentLogo = "https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-logo-white.svg";
+  const primaryLogo = "https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg"; 
+
   return (
     <div
       className={`fixed top-0 left-0 w-full h-28 flex items-center text-[22px] cursor-pointer transition-all duration-300 z-50 ${isTransparent
@@ -19,9 +22,9 @@ const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
       </div>
       <div className='w-1/6 flex justify-center items-center'>
         <img
-          src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg"
+          src={isTransparent ? transparentLogo : primaryLogo}
           alt="logo"
-          className='w-16 h-16 hover:scale-110 transition-transform duration-300'
+          className={`hover:scale-110 transition-transform duration-300 ${isTransparent ? 'w-28 h-28' : 'w-16 h-16'}`}
         />
       </div>
       <div className='w-1/3 flex justify-end gap-10'>

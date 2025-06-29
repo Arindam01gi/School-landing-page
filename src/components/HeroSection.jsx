@@ -8,7 +8,7 @@ const HeroSection = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover z-40" // Lower z-index than navbar
+        className="absolute top-0 left-0 w-full h-full object-cover z-40" 
       >
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.

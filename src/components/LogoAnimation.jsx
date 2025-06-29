@@ -6,6 +6,7 @@ const LogoAnimation = ({ onComplete }) => {
     const containerRef = useRef(null);
     const lettersRef = useRef([]);
     const logoRef = useRef(null);
+    const highSchoolTextRef = useRef(null);
 
     // The letters in order of appearance
     const letters = ['P', 'U', 'T', 'N', 'E', 'Y'];
@@ -34,34 +35,35 @@ const LogoAnimation = ({ onComplete }) => {
         const container = containerRef.current;
         const letters = lettersRef.current;
         const logo = logoRef.current;
+        const highSchoolText = highSchoolTextRef.current;
 
         // Set initial state - spread out with a bigger gap
         gsap.set(container, { opacity: 1 });
         gsap.set(letters, { opacity: 0, x: (i) => initialPositions[i].x, y: 0 });
-        gsap.set(logo, { opacity: 0, scale: 0 }); // Hide the logo initially
+        gsap.set(logo, { opacity: 0, y: -100 }); 
+        gsap.set(highSchoolText, { opacity: 0, y: 100 }); 
 
         // Create animation timeline
         const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
 
-        // Animate letters appearing and moving closer together simultaneously
         tl.to(letters, {
             opacity: 1,
             x: (i) => finalPositions[i].x, // Move to final x position
             y: (i) => finalPositions[i].y, // Move to final y position
-            duration: 1,
-            stagger: 0, // No stagger, all letters move simultaneously
+            duration: 2,
+            stagger: 0, 
         });
 
-        // Morph letters into the logo
-        tl.to(letters, {
-            opacity: 0, // Fade out letters
-            duration: 0.5,
+        tl.to(logo, {
+            opacity: 1,
+            y: 0, // Move to final y position
+            duration: 1, // Slower duration
             ease: "power2.inOut",
-        })
-        .to(logo, {
-            opacity: 1, // Fade in logo
-            scale: 1, // Scale up logo
-            duration: 0.5,
+        }, "-=0.5") // Overlap slightly with the letters animation
+        .to(highSchoolText, {
+            opacity: 1,
+            y: 0, // Move to final y position
+            duration: 1, // Slower duration
             ease: "power2.inOut",
             onComplete: () => {
                 if (onComplete) {
@@ -69,7 +71,7 @@ const LogoAnimation = ({ onComplete }) => {
                 }
                 console.log("Animation complete - show main content");
             }
-        });
+        }, "-=0.5"); // Overlap slightly with the logo animation
 
         // Clean up animation on unmount
         return () => tl.kill();
@@ -88,10 +90,13 @@ const LogoAnimation = ({ onComplete }) => {
             ))}
             <img
                 ref={logoRef}
-                src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-logo-white.svg"
+                src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg"
                 alt="Putney High School Logo"
-                className="absolute w-48 h-48 opacity-0" // Initially hidden
+                className="absolute top-[30%] w-24 h-24 opacity-0" 
             />
+            <div ref={highSchoolTextRef} className="absolute bottom-[40%] text-2xl opacity-0">
+                HIGH SCHOOL
+            </div>
         </div>
     );
 };
