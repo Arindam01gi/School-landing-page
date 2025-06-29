@@ -13,9 +13,6 @@ const HeroSection = () => {
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative z-10 flex items-center justify-center h-full text-white text-4xl font-bold">
-        Welcome to Our School
-      </div>
     </div>
   )
 }
