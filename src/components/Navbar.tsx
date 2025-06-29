@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ isTransparent = true }) => {
         <img
           src={isTransparent ? transparentLogo : primaryLogo}
           alt="logo"
-          className={`hover:scale-110 transition-transform duration-300 ${isTransparent ? 'w-28 h-28' : 'w-16 h-16'}`}
+          className={`hover:scale-110 transition-transform duration-300 py-2 ${isTransparent ? 'w-32 h-32' : 'w-16 h-16'}`}
         />
       </div>
       <div className='w-1/3 flex justify-end gap-10'>

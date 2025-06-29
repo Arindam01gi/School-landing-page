@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
-    return (
+  return (
         <div className='px-8  space-y-12 md:space-y-24  w-full bg-primary  flex flex-col justify-center  items-center '>
 
             <div className=' h-full  flex flex-col items-center justify-center max-w-7xl '>
@@ -89,7 +89,7 @@ const Footer = () => {
 
                     </div>
 
-                </div>
+            </div>
 
                 <div className="px-8 py-12 w-full ">
                     <div className="flex flex-col justify-center gap-8 lg:items-center lg:flex-row-reverse md:gap-16 text-white">
@@ -132,10 +132,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-            </div>
-
         </div>
-    )
+
+    </div>
+  )
 }
 
 export default Footer

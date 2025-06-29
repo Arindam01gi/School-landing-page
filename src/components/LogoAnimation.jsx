@@ -40,20 +40,22 @@ const LogoAnimation = ({ onComplete }) => {
         // Set initial state - spread out with a bigger gap
         gsap.set(container, { opacity: 1 });
         gsap.set(letters, { opacity: 0, x: (i) => initialPositions[i].x, y: 0 });
-        gsap.set(logo, { opacity: 0, y: -100 }); 
-        gsap.set(highSchoolText, { opacity: 0, y: 100 }); 
+        gsap.set(logo, { opacity: 0, y: -100 }); // Hide logo initially, slightly above
+        gsap.set(highSchoolText, { opacity: 0, y: 100 }); // Hide "HIGH SCHOOL" initially, slightly below
 
         // Create animation timeline
         const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
 
+        // Animate letters appearing and moving closer together simultaneously
         tl.to(letters, {
             opacity: 1,
             x: (i) => finalPositions[i].x, // Move to final x position
             y: (i) => finalPositions[i].y, // Move to final y position
-            duration: 2,
-            stagger: 0, 
+            duration: 2, // Slower duration
+            stagger: 0, // No stagger, all letters move simultaneously
         });
 
+        // Add logo and "HIGH SCHOOL" text
         tl.to(logo, {
             opacity: 1,
             y: 0, // Move to final y position
@@ -65,13 +67,19 @@ const LogoAnimation = ({ onComplete }) => {
             y: 0, // Move to final y position
             duration: 1, // Slower duration
             ease: "power2.inOut",
+        }, "-=0.5") // Overlap slightly with the logo animation
+        .to([logo, letters, highSchoolText], {
+            y: -window.innerHeight / 2 + 50, // Move to the center of the top navbar
+            scale: 0.3, // Gradually reduce size to make it much smaller
+            duration: 1.5, // Slower duration for smoother transition
+            ease: "power2.inOut",
             onComplete: () => {
                 if (onComplete) {
                     onComplete();
                 }
                 console.log("Animation complete - show main content");
             }
-        }, "-=0.5"); // Overlap slightly with the logo animation
+        });
 
         // Clean up animation on unmount
         return () => tl.kill();
@@ -92,9 +100,9 @@ const LogoAnimation = ({ onComplete }) => {
                 ref={logoRef}
                 src="https://www.putneyhigh.gdst.net/wp-content/uploads/2024/07/putney-high-mark-white.svg"
                 alt="Putney High School Logo"
-                className="absolute top-[30%] w-24 h-24 opacity-0" 
+                className="absolute top-[33%] w-24 h-24 opacity-0" 
             />
-            <div ref={highSchoolTextRef} className="absolute bottom-[40%] text-2xl opacity-0">
+            <div ref={highSchoolTextRef} className="absolute bottom-[42%] text-4xl opacity-0">
                 HIGH SCHOOL
             </div>
         </div>
